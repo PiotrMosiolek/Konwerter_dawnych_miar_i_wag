@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Konwerter_Dawnych_Miar_i_Wag'

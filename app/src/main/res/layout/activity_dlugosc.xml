@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fototapety_stary_papier"
+    tools:context=".Dlugosc">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="388dp"
+        android:layout_height="695dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/Liczba1"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/amarante"
+            android:padding="4dp"
+            android:text="Wartość"
+            android:textAlignment="center"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/wartosc_poczatkowa"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/amarante"
+            android:hint="Wprowadź wartość"
+            android:inputType="numberDecimal"
+            android:padding="4dp"
+            android:textAlignment="center"
+            android:textColor="@color/fontColor"
+            app:layout_constraintBottom_toBottomOf="@+id/Liczba1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Liczba1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/przeliczZ"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/amarante"
+            android:padding="4dp"
+            android:text="Przelicz Z"
+            android:textAlignment="center"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Liczba1" />
+
+        <TextView
+            android:id="@+id/TypJednostki1"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/amarante"
+            android:padding="4dp"
+            android:text="Typ jednostki"
+            android:textAlignment="center"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/przeliczZ" />
+
+        <Spinner
+            android:id="@+id/spinnerZ"
+            android:layout_width="200dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/spinner_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TypJednostki1"
+            app:layout_constraintTop_toBottomOf="@+id/przeliczZ" />
+
+        <TextView
+            android:id="@+id/przeliczNa"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/amarante"
+            android:padding="4dp"
+            android:text="Przelicz na"
+            android:textAlignment="center"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TypJednostki1" />
+
+        <TextView
+            android:id="@+id/TypJednostki2"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/amarante"
+            android:padding="4dp"
+            android:text="Typ jednostki"
+            android:textAlignment="center"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/przeliczNa" />
+
+        <Spinner
+            android:id="@+id/spinnerNa"
+            android:layout_width="200dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/spinner_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TypJednostki2"
+            app:layout_constraintTop_toBottomOf="@+id/przeliczNa" />
+
+        <TextView
+            android:id="@+id/wynik"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/amarante"
+            android:padding="4dp"
+            android:text="Wynik"
+            android:textAlignment="center"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TypJednostki2" />
+
+        <TextView
+            android:id="@+id/rezultat"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/amarante"
+            android:padding="4dp"
+            android:textAlignment="center"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/wynik"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/wynik"
+            app:layout_constraintTop_toTopOf="@+id/wynik" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/amarante"
+            android:onClick="obliczWartosc_koncowa"
+            android:text="Przelicz"
+            android:textColor="@color/fontColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rezultat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
